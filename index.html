@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cloud Storage</h1>
+    </header>
+    <main>
+        <section id="upload">
+            <h2>Upload File</h2>
+            <input type="file" id="fileInput" />
+            <button id="uploadButton">Upload to Telegram</button>
+            <div id="uploadProgress">
+                <progress id="uploadProgressBar" value="0" max="100"></progress>
+                <span id="uploadPercentage">0%</span>
+            </div>
+        </section>
+        <section id="download">
+            <h2>Download File</h2>
+            <input type="text" id="fileNameInput" placeholder="Enter file name" />
+            <button id="downloadButton">Download from Telegram</button>
+            <div id="downloadProgress">
+                <progress id="downloadProgressBar" value="0" max="100"></progress>
+                <span id="downloadPercentage">0%</span>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
